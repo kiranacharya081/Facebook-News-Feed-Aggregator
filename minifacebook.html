@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facebook News Feed</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        font-family: Arial, sans-serif;
+        background:#f5f5f5;
+        padding:20px;
+    }
+
+    .container{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .fb-wrapper{
+        width:100%;
+        max-width:500px;
+        background:white;
+        padding:10px;
+        border-radius:8px;
+        box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width:768px){
+        .fb-wrapper{
+            max-width:100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div id="fb-root"></div>
+
+<script async defer crossorigin="anonymous"
+src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v23.0">
+</script>
+
+<div class="container">
+
+    <div class="fb-wrapper">
+        <div class="fb-page"
+             data-href="https://www.facebook.com/officialroutineofnepalbanda"
+             data-tabs="timeline"
+             data-height="700"
+             data-adapt-container-width="true"
+             data-hide-cover="false"
+             data-show-facepile="true">
+        </div>
+    </div>
+
+    <div class="fb-wrapper">
+        <div class="fb-page"
+             data-href="https://www.facebook.com/nebresultandnews0"
+             data-tabs="timeline"
+             data-height="700"
+             data-adapt-container-width="true"
+             data-hide-cover="false"
+             data-show-facepile="true">
+        </div>
+    </div>
+
+    <div class="fb-wrapper">
+        <div class="fb-page"
+             data-href="https://www.facebook.com/sharemarketroutine"
+             data-tabs="timeline"
+             data-height="700"
+             data-adapt-container-width="true"
+             data-hide-cover="false"
+             data-show-facepile="true">
+        </div>
+    </div>
+
+    <div class="fb-wrapper">
+        <div class="fb-page"
+             data-href="https://www.facebook.com/profile.php?id=61579831229341"
+             data-tabs="timeline"
+             data-height="700"
+             data-adapt-container-width="true"
+             data-hide-cover="false"
+             data-show-facepile="true">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
